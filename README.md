@@ -9,24 +9,24 @@ ERD
 ![image](https://user-images.githubusercontent.com/48313937/123947494-a6345200-d9ca-11eb-8024-81dbcd431614.png)
 Chạy file app.go (lệnh go run app.go)
 #### Các API hoàn thành 
-//API Product 
+<br>//API Product 
 func routeProduct(router *fiber.Router) {
-    //Liệt kê Prodcuts, phân trang ,tìm kiếm bằng tên sản phầm, lọc giá từ cao đến thấp và ngược lại 
-	(*router).Get("/", controller.GetProducts) 
-    //lấy product theo ID để đưa vào chi tiết sản phẩm
-	(*router).Get("/:id", controller.GetProductById) 
+ <br>   //Liệt kê Prodcuts, phân trang ,tìm kiếm bằng tên sản phầm, lọc giá từ cao đến thấp và ngược lại 
+<br>	(*router).Get("/", controller.GetProducts) 
+ <br>   //lấy product theo ID để đưa vào chi tiết sản phẩm
+<br>	(*router).Get("/:id", controller.GetProductById) 
 }
-//API Category
-func routeCategory(router *fiber.Router) {
-    ////Liệt kê các Category
-	(*router).Get("/", controller.GetCategories)
+<br>//API Category
+<br>func routeCategory(router *fiber.Router) {
+<br>    ////Liệt kê các Category
+<br>	(*router).Get("/", controller.GetCategories)
 }
 
 # FRONT-END
 
 PORT:8080
-Cài đặt: npm install or yarn install
-Development: yarn server
+<br>Cài đặt: npm install or yarn install
+<br>Development: yarn server
 
 
 
